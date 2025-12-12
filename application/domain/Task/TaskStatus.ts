@@ -1,5 +1,5 @@
 export enum TaskStatus {
-    Open = 'OPEN',
-    Completed = 'COMPLETED',
-    Canceled = 'CANCELED'
+  Open = 'OPEN',
+  Completed = 'COMPLETED',
+  Canceled = 'CANCELED',
 }

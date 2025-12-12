@@ -5,69 +5,69 @@ import { CompletedAt } from './CompletedAt';
 import { TaskStatus } from './TaskStatus';
 
 export class Task {
-    id: TaskId;
-    message: Message;
-    createdAt: CreatedAt;
-    completedAt: CompletedAt;
-    status: TaskStatus;
+  id: TaskId;
+  message: Message;
+  createdAt: CreatedAt;
+  completedAt: CompletedAt;
+  status: TaskStatus;
 
-    constructor(
-        id: TaskId,
-        message: Message,
-        createdAt: CreatedAt,
-        status: TaskStatus,
-        completedAt: CompletedAt = new CompletedAt(null)
-    ) {
-        this.id = id;
-        this.message = message;
-        this.createdAt = createdAt;
-        this.status = status;
-        this.completedAt = completedAt;
-    }
+  constructor(
+    id: TaskId,
+    message: Message,
+    createdAt: CreatedAt,
+    status: TaskStatus,
+    completedAt: CompletedAt = new CompletedAt(null)
+  ) {
+    this.id = id;
+    this.message = message;
+    this.createdAt = createdAt;
+    this.status = status;
+    this.completedAt = completedAt;
+  }
 
-    getId(): TaskId {
-        return this.id;
-    }
+  getId(): TaskId {
+    return this.id;
+  }
 
-    getMessage(): Message {
-        return this.message;
-    }
+  getMessage(): Message {
+    return this.message;
+  }
 
-    getCreatedAt(): CreatedAt {
-        return this.createdAt;
-    }
+  getCreatedAt(): CreatedAt {
+    return this.createdAt;
+  }
 
-    getCompletedAt(): CompletedAt {
-        return this.completedAt;
-    }
+  getCompletedAt(): CompletedAt {
+    return this.completedAt;
+  }
 
-    getStatus(): TaskStatus {
-        return this.status;
-    }
+  getStatus(): TaskStatus {
+    return this.status;
+  }
 
-    markAsCompleted(): void {
-        if (this.status === TaskStatus.Open) {
-            this.status = TaskStatus.Completed;
-            this.completedAt = new CompletedAt(new Date());
-        }
+  markAsCompleted(): void {
+    if (this.status === TaskStatus.Open) {
+      this.status = TaskStatus.Completed;
+      this.completedAt = new CompletedAt(new Date());
     }
+  }
 
-    markAsCanceled(): void {
-        if (this.status === TaskStatus.Open) {
-            this.status = TaskStatus.Canceled;
-            this.completedAt = new CompletedAt(new Date());
-        }
+  markAsCanceled(): void {
+    if (this.status === TaskStatus.Open) {
+      this.status = TaskStatus.Canceled;
+      this.completedAt = new CompletedAt(new Date());
     }
+  }
 
-    isOpen(): boolean {
-        return this.status === TaskStatus.Open;
-    }
+  isOpen(): boolean {
+    return this.status === TaskStatus.Open;
+  }
 
-    isCompleted(): boolean {
-        return this.status === TaskStatus.Completed;
-    }
+  isCompleted(): boolean {
+    return this.status === TaskStatus.Completed;
+  }
 
-    isCanceled(): boolean {
-        return this.status === TaskStatus.Canceled;
-    }
+  isCanceled(): boolean {
+    return this.status === TaskStatus.Canceled;
+  }
 }

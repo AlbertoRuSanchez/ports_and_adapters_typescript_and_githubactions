@@ -1,11 +1,11 @@
 module.exports = {
-  testEnvironment: "node",
+  testEnvironment: 'node',
   transform: {
-    "^.+\\.tsx?$": "ts-jest"
+    '^.+\\.tsx?$': 'ts-jest',
   },
-  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|tsx|js|jsx)$",
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|tsx|js|jsx)$',
   collectCoverage: true,
-  coverageReporters: ["text"],
-  coverageProvider: "v8"
-}
+  coverageReporters: ['text'],
+  coverageProvider: 'v8',
+};

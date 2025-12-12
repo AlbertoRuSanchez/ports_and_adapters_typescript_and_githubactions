@@ -1,3 +1,3 @@
 export interface TaskLoadRepository {
-    loadAllTasks(): Promise<any[]>;
+  loadAllTasks(): Promise<any[]>;
 }
