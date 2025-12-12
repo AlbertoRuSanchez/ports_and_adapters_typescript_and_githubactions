@@ -67,7 +67,7 @@ describe('UserId', () => {
 
         it('should return false when comparing UserIds with different values', () => {
             const userId1 = new UserId('abc123def456');
-            const userId2 = new UserId('xyz789uvw000');
+            const userId2 = new UserId('def456789abc');
             expect(userId1.equals(userId2)).toBe(false);
         });
 
