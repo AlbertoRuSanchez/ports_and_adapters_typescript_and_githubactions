@@ -13,9 +13,9 @@
   "scripts": {
     "test": "jest",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\""
-  },
-  "repository": {
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "db:up": "docker-compose up -d",
+    "db:down": "docker-compose down",
     "type": "git",
     "url": "git+https://github.com/AlbertoRuSanchez/talkapp.git"
   },

@@ -1,11 +1,5 @@
-import { TaskLoadService } from '../TaskLoadService';
-import { TaskLoadRepository } from '../../../ports/output/TaskRepository';
-import { Task } from '../Task';
-import { TaskId } from '../TaskId';
-import { Message } from '../Message';
-import { CreatedAt } from '../CreatedAt';
-import { CompletedAt } from '../CompletedAt';
-import { TaskStatus } from '../TaskStatus';
+import { TaskLoadService } from './TaskLoadService';
+import { TaskLoadRepository } from './TaskRepository';
 
 describe('TaskLoadService', () => {
   let taskLoadService: TaskLoadService;
