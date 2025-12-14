@@ -1,13 +1,14 @@
 import { TaskLoadService } from './TaskLoadService';
-import { TaskLoadRepository } from './TaskRepository';
+import { TaskRepository } from './TaskRepository';
 
 describe('TaskLoadService', () => {
   let taskLoadService: TaskLoadService;
-  let mockTaskLoadRepository: jest.Mocked<TaskLoadRepository>;
+  let mockTaskLoadRepository: jest.Mocked<TaskRepository>;
 
   beforeEach(() => {
     mockTaskLoadRepository = {
       loadAllTasks: jest.fn(),
+      save: jest.fn(),
     };
     taskLoadService = new TaskLoadService(mockTaskLoadRepository);
   });

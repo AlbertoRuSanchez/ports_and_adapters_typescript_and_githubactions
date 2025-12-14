@@ -1,7 +1,7 @@
-import { TaskLoadRepository } from "./TaskRepository";
+import { TaskRepository } from "./TaskRepository";
 export class TaskLoadService {
-  private taskLoadRepository: TaskLoadRepository;
-  constructor(injectedTaskLoadRepository: TaskLoadRepository) {
+  private taskLoadRepository: TaskRepository;
+  constructor(injectedTaskLoadRepository: TaskRepository) {
     this.taskLoadRepository = injectedTaskLoadRepository;
   }
 
