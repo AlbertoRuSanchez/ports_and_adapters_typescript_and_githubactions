@@ -1,6 +1,6 @@
 import { TaskLoadRepository } from "../application/TaskRepository";
 
-export class TaskPostgresaSQLRepository implements TaskLoadRepository  {
+export class TaskPostgresSQLRepository implements TaskLoadRepository  {
     async loadAllTasks(): Promise<any[]> {  
         return [];
     }

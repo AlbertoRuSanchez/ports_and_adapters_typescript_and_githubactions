@@ -1,5 +1,4 @@
-import { TaskLoadRepository } from '../../ports/output/TaskRepository';
-
+import { TaskLoadRepository } from "./TaskRepository";
 export class TaskLoadService {
   private taskLoadRepository: TaskLoadRepository;
   constructor(injectedTaskLoadRepository: TaskLoadRepository) {
