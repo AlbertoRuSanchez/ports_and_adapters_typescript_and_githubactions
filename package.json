@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
+    "@types/express": "^5.0.6",
     "@types/jest": "^30.0.0",
     "jest": "^30.2.0",
     "prettier": "^3.7.4",
@@ -26,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/AlbertoRuSanchez/talkapp/issues"
   },
-  "homepage": "https://github.com/AlbertoRuSanchez/talkapp#readme"
+  "homepage": "https://github.com/AlbertoRuSanchez/talkapp#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
