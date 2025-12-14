@@ -9,9 +9,11 @@
     "jest": "^30.2.0",
     "prettier": "^3.7.4",
     "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
   "scripts": {
+    "dev": "npx ts-node ./src/main.ts",
     "test": "jest",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
