@@ -115,7 +115,7 @@ describe('TaskSaveService', () => {
 
       await taskSaveService.saveTask(mockTask);
 
-      const callArgs = mockTaskRepository.save.mock.calls[0][0];
+      const callArgs = mockTaskRepository.save.mock.calls[0]![0];
       expect(callArgs.id).toBe('jkl012');
       expect(callArgs.message).toBe('Complete task');
       expect(callArgs.status).toBe('COMPLETED');
