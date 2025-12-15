@@ -1,4 +1,4 @@
-import { TaskRepository } from "./TaskRepository";
+import { TaskRepository } from './TaskRepository';
 export class TaskLoadService {
   private taskLoadRepository: TaskRepository;
   constructor(injectedTaskLoadRepository: TaskRepository) {

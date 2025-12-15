@@ -1,19 +1,18 @@
-import { UserRepository } from "../application/UserRepository";
+import { UserRepository } from '../application/UserRepository';
 
 export class UserPostgresSQLRepository implements UserRepository {
-    private users: Map<string, { username: string; password: string }> = new Map();
+  private users: Map<string, { username: string; password: string }> = new Map();
 
-    loadAllUsers(): { username: string; password: string; }[] {
-        return Array.from(this.users.values());
-    }
-    
-    saveUser(username: string, password: string): void {
-        console.log(`Saving user ${username} to PostgreSQL database.`);
-    }
+  loadAllUsers(): { username: string; password: string }[] {
+    return Array.from(this.users.values());
+  }
 
-    findUserByUsername(username: string): { username: string; password: string } | null {
-        console.log(`Finding user ${username} in PostgreSQL database.`);
-        return null;
-    }
+  saveUser(username: string, password: string): void {
+    console.log(`Saving user ${username} to PostgreSQL database.`);
+  }
 
+  findUserByUsername(username: string): { username: string; password: string } | null {
+    console.log(`Finding user ${username} in PostgreSQL database.`);
+    return null;
+  }
 }
