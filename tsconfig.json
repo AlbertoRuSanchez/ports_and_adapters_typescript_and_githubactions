@@ -8,11 +8,7 @@
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
-    "types": [
-      "node",
-      "jest",
-      "express"
-    ],
+    "types": ["node", "jest", "express"],
     "baseUrl": "./",
     // For nodejs:
     // "lib": ["esnext"],
