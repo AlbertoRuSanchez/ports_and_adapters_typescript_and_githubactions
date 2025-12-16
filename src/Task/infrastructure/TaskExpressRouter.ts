@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { TaskExpressController } from './TaskExpressController';
+import { TaskExpressController } from './primary/TaskExpressController';
 import { ServiceContainer } from '../../../Shared/infrastructure/ServiceContainer';
 
 const taskRouter = Router();

@@ -1,6 +1,6 @@
 import express from 'express';
 import { Request, Response, NextFunction } from 'express';
-import { taskRouter } from './Task/infrastructure/in/TaskExpressRouter';
+import { taskRouter } from './Task/infrastructure/TaskExpressRouter';
 
 const app = express();
 app.use(taskRouter);
