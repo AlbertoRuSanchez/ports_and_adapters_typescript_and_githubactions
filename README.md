@@ -12,9 +12,9 @@ The main idea is that the **Application Core** (Business Logic) should be indepe
 
 - **The Hexagon (Core)**: Contains the Domain Entities and Use Cases. It defines the business rules.
 - **Ports**: Interfaces defined by the Core. They serve as entry and exit points.
-  - **Driving Ports (Primary)**: Interfaces that define the *Use Cases* of the application. They tell the outside world "what this application can do".
+  - **Driving Ports (Primary)**: Interfaces that define the _Use Cases_ of the application. They tell the outside world "what this application can do".
     - **Benefit**: Ensures that the business logic is agnostic of how it is triggered. You can expose the same functionality via a REST API, a CLI, or a Test Runner using the exact same interface.
-  - **Driven Ports (Secondary)**: Interfaces that define the *SPI (Service Provider Interface)* required by the application. They tell the outside world "what this application needs" to work (e.g., "I need a way to save a user").
+  - **Driven Ports (Secondary)**: Interfaces that define the _SPI (Service Provider Interface)_ required by the application. They tell the outside world "what this application needs" to work (e.g., "I need a way to save a user").
     - **Benefit**: Decouples the business logic from specific infrastructure technologies. You can switch from an In-Memory database to PostgreSQL or an external API by simply changing the adapter implementation, with zero changes to the business rules.
 - **Adapters**: Implementation details that bridge the gap between the external world and the Ports.
   - **Driving Adapters**: Convert external requests (from a Controller, CLI, or Event) into calls to the Driving Ports.
