@@ -1,9 +1,9 @@
 import { TaskLoadService } from './TaskLoadService';
-import { TaskRepository } from './TaskRepository';
+import { TaskRepositoryPort } from './ports/secondary/TaskRepositoryPort';
 
 describe('TaskLoadService', () => {
   let taskLoadService: TaskLoadService;
-  let mockTaskLoadRepository: jest.Mocked<TaskRepository>;
+  let mockTaskLoadRepository: jest.Mocked<TaskRepositoryPort>;
 
   beforeEach(() => {
     mockTaskLoadRepository = {

@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { TaskExpressController } from './TaskExpressController';
-import { TaskLoadPort } from '../../../application/ports/primary/TaskLoadPort';
+import { TaskLoadPort } from '../../application/ports/primary/TaskLoadPort';
 
 describe('TaskExpressController', () => {
   let controller: TaskExpressController;
