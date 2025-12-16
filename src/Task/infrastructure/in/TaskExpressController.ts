@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { TaskLoadPort } from '../../application/ports/TaskLoadPort';
+import { TaskLoadPort } from '../../application/ports/primary/TaskLoadPort';
 
 export class TaskExpressController {
   private taskLoadService: TaskLoadPort;

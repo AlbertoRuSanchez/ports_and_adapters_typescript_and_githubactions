@@ -1,4 +1,4 @@
-import { UserRepositoryPort } from '../application/ports/UserRepositoryPort';
+import { UserRepositoryPort } from '../application/ports/secondary/UserRepositoryPort';
 
 export class UserPostgresSQLRepository implements UserRepositoryPort {
   private users: Map<string, { username: string; password: string }> = new Map();

@@ -1,4 +1,4 @@
-import { UserRepositoryPort } from './ports/UserRepositoryPort';
+import { UserRepositoryPort } from './ports/secondary/UserRepositoryPort';
 
 export class UserService {
   private userRepository: UserRepositoryPort;

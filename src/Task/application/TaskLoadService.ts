@@ -1,5 +1,5 @@
-import { TaskRepositoryPort } from './ports/TaskRepositoryPort';
-import { TaskLoadPort } from './ports/TaskLoadPort';
+import { TaskRepositoryPort } from './ports/secondary/TaskRepositoryPort';
+import { TaskLoadPort } from './ports/primary/TaskLoadPort';
 
 export class TaskLoadService implements TaskLoadPort {
   private taskLoadRepository: TaskRepositoryPort;
