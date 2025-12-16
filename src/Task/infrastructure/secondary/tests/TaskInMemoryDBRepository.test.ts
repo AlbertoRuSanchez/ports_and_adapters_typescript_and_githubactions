@@ -1,4 +1,4 @@
-import { TaskInMemoryDBRepository } from './TaskInMemoryDBRepository';
+import { TaskInMemoryDBRepository } from '../TaskInMemoryDBRepository';
 
 describe('TaskInMemoryDBRepository', () => {
   let repository: TaskInMemoryDBRepository;

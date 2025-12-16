@@ -1,5 +1,5 @@
-import { TaskLoadService } from './TaskLoadService';
-import { TaskRepositoryPort } from './ports/secondary/TaskRepositoryPort';
+import { TaskLoadService } from '../TaskLoadService';
+import { TaskRepositoryPort } from '../ports/secondary/TaskRepositoryPort';
 
 describe('TaskLoadService', () => {
   let taskLoadService: TaskLoadService;

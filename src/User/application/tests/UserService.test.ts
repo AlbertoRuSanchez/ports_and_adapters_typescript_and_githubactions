@@ -1,5 +1,5 @@
-import { UserService } from './UserService';
-import { UserRepositoryPort } from './ports/secondary/UserRepositoryPort';
+import { UserService } from '../UserService';
+import { UserRepositoryPort } from '../ports/secondary/UserRepositoryPort';
 
 describe('UserService', () => {
   let userService: UserService;

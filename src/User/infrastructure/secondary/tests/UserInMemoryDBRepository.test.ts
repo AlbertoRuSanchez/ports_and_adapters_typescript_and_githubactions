@@ -1,4 +1,4 @@
-import { UserInMemoryDBRepository } from './UserInMemoryDBRepository';
+import { UserInMemoryDBRepository } from '../UserInMemoryDBRepository';
 
 describe('UserInMemoryDBRepository', () => {
   let repository: UserInMemoryDBRepository;

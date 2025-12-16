@@ -1,4 +1,4 @@
-import { TaskPostgresSQLRepository } from './TaskPostgresSQLRepository';
+import { TaskPostgresSQLRepository } from '../TaskPostgresSQLRepository';
 
 describe('TaskPostgresSQLRepository', () => {
   let repository: TaskPostgresSQLRepository;

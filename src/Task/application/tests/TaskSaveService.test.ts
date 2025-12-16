@@ -1,5 +1,5 @@
-import { TaskSaveService } from './TaskSaveService';
-import { TaskRepositoryPort } from './ports/secondary/TaskRepositoryPort';
+import { TaskSaveService } from '../TaskSaveService';
+import { TaskRepositoryPort } from '../ports/secondary/TaskRepositoryPort';
 
 describe('TaskSaveService', () => {
   let taskSaveService: TaskSaveService;

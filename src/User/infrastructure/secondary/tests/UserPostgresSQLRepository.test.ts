@@ -1,4 +1,4 @@
-import { UserPostgresSQLRepository } from './UserPostgresSQLRepository';
+import { UserPostgresSQLRepository } from '../UserPostgresSQLRepository';
 
 describe('UserPostgresSQLRepository', () => {
   let repository: UserPostgresSQLRepository;
