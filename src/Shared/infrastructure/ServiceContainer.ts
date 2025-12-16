@@ -1,9 +1,9 @@
 import { UserService } from '../../User/application/UserService';
 import { TaskLoadService } from '../../Task/application/TaskLoadService';
 
-import { UserInMemoryDBRepository } from '../../User/infrastructure/UserInMemoryDBRepository';
+import { UserInMemoryDBRepository } from '../../User/infrastructure/secondary/UserInMemoryDBRepository';
 import { TaskSaveService } from '../../Task/application/TaskSaveService';
-import { TaskInMemoryDBRepository } from '../../Task/infrastructure/TaskInMemoryDBRepository';
+import { TaskInMemoryDBRepository } from '../../Task/infrastructure/secondary/TaskInMemoryDBRepository';
 
 const userRepository = new UserInMemoryDBRepository();
 const taskRepository = new TaskInMemoryDBRepository();

@@ -1,4 +1,4 @@
-import { UserRepositoryPort } from '../application/ports/secondary/UserRepositoryPort';
+import { UserRepositoryPort } from '../../application/ports/secondary/UserRepositoryPort';
 
 export class UserInMemoryDBRepository implements UserRepositoryPort {
   private users: { username: string; password: string }[] = [];

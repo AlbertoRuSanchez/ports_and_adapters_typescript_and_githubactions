@@ -1,4 +1,4 @@
-import { TaskRepositoryPort } from '../application/ports/secondary/TaskRepositoryPort';
+import { TaskRepositoryPort } from '../../application/ports/secondary/TaskRepositoryPort';
 
 export class TaskInMemoryDBRepository implements TaskRepositoryPort {
   private tasks: any[] = [
