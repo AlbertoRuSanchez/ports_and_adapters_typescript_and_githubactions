@@ -1,3 +1,3 @@
 export interface TaskLoadPort {
-    loadAllTasks(): Promise<any[]>;
+  loadAllTasks(): Promise<any[]>;
 }
