@@ -1,8 +1,9 @@
 import { Router } from 'express';
 import { TaskExpressController } from './TaskExpressController';
+import { ServiceContainer } from '../../../Shared/infrastructure/ServiceContainer';
 
 const taskRouter = Router();
-const taskController = new TaskExpressController();
+const taskController = new TaskExpressController(ServiceContainer.task.taskLoadService);
 
 taskRouter.get('/tasks/', (req, res) => taskController.getAllTasks(req, res));
 

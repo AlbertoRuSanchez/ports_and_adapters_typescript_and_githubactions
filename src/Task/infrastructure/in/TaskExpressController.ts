@@ -1,9 +1,15 @@
 import { Request, Response } from 'express';
-import { ServiceContainer } from '../../../Shared/infrastructure/ServiceContainer';
+import { TaskLoadPort } from '../../application/ports/TaskLoadPort';
 
 export class TaskExpressController {
+  private taskLoadService: TaskLoadPort;
+
+  constructor(taskLoadService: TaskLoadPort) {
+    this.taskLoadService = taskLoadService;
+  }
+
   async getAllTasks(req: Request, res: Response) {
-    const users = await ServiceContainer.task.taskLoadService.loadAllTasks();
+    const users = await this.taskLoadService.loadAllTasks();
     return res.status(200).json(users);
   }
 }

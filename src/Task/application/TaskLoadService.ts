@@ -1,5 +1,7 @@
 import { TaskRepository } from './TaskRepository';
-export class TaskLoadService {
+import { TaskLoadPort } from './ports/TaskLoadPort';
+
+export class TaskLoadService implements TaskLoadPort {
   private taskLoadRepository: TaskRepository;
   constructor(injectedTaskLoadRepository: TaskRepository) {
     this.taskLoadRepository = injectedTaskLoadRepository;
