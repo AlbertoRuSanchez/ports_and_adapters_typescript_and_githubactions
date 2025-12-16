@@ -1,6 +1,6 @@
-import { UserRepository } from '../application/UserRepository';
+import { UserRepositoryPort } from '../application/ports/UserRepositoryPort';
 
-export class UserPostgresSQLRepository implements UserRepository {
+export class UserPostgresSQLRepository implements UserRepositoryPort {
   private users: Map<string, { username: string; password: string }> = new Map();
 
   loadAllUsers(): { username: string; password: string }[] {

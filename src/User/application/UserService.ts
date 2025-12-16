@@ -1,9 +1,9 @@
-import { UserRepository } from './UserRepository';
+import { UserRepositoryPort } from './ports/UserRepositoryPort';
 
 export class UserService {
-  private userRepository: UserRepository;
+  private userRepository: UserRepositoryPort;
 
-  constructor(injectedUserRepository: UserRepository) {
+  constructor(injectedUserRepository: UserRepositoryPort) {
     this.userRepository = injectedUserRepository;
   }
 

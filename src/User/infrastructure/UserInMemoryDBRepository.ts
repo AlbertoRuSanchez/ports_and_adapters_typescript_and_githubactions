@@ -1,6 +1,6 @@
-import { UserRepository } from '../application/UserRepository';
+import { UserRepositoryPort } from '../application/ports/UserRepositoryPort';
 
-export class UserInMemoryDBRepository implements UserRepository {
+export class UserInMemoryDBRepository implements UserRepositoryPort {
   private users: { username: string; password: string }[] = [];
 
   loadAllUsers(): { username: string; password: string }[] {

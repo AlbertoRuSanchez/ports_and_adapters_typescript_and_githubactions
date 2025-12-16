@@ -1,9 +1,9 @@
-import { TaskRepository } from './TaskRepository';
+import { TaskRepositoryPort } from './ports/TaskRepositoryPort';
 import { TaskSavePort } from './ports/TaskSavePort';
 
 export class TaskSaveService implements TaskSavePort {
-  private taskRepository: TaskRepository;
-  constructor(injectedTaskSRepository: TaskRepository) {
+  private taskRepository: TaskRepositoryPort;
+  constructor(injectedTaskSRepository: TaskRepositoryPort) {
     this.taskRepository = injectedTaskSRepository;
   }
 
